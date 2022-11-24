@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Portal do Tempo";
+}
+
+<div class="row">
+    <div class="jumbotron">
+        <h3>Random Key Generator</h3>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Key informations</h3>
+        </div>
+        <div class="panel-body">
+            <div class="well"><b>DateTime: </b>@ViewData["DateTimeNow"]</div>
+            <div class="well"><b>Key: </b>@ViewData["Key"]</div>
+            <div class="well"><b>Odd Sum:</b> @ViewData["Sum"]</div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Memory Information</h3>
+        </div>
+        <div class="panel-body">
+            <div class="well"><b>GEN0 Collections:</b> @ViewData["gc0"]</div>
+            <div class="well"><b>GEN1 Collections:</b> @ViewData["gc1"]</div>
+            <div class="well"><b>GEN2 Collections:</b> @ViewData["gc2"]</div>
+            <div class="well"><b>Current Memory:</b> @ViewData["currentMemory"]</div>
+            <div class="well"><b>Process Memory:</b> @ViewData["privateBytes"]</div>
+        </div>
+    </div>
+</div>
